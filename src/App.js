@@ -6,17 +6,18 @@ const img ="imgg/abo.jpg"
 function App() {
   return (
     <>
+      <section id="homee">
       <div class="hero">
         <nav>
           <h2 class="logo">Portfo<span>lio</span></h2>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contect Us</a></li>
+            <li><a href="#homee">Home</a></li>
+            <li><a href="#about_us">About Us</a></li>
+            <li><a href="#service_me">Services</a></li>
+            {/* <li><a href="#">Skills</a></li> */}
+            <li><a href="#contect_me">Contect Us</a></li>
           </ul>
-          <a href="#" class="btn">Contect</a>
+          <a href="#super" class="btn">Contect</a>
         </nav>
         <div className="content">
           <h4>Hello, my name is</h4>
@@ -31,24 +32,29 @@ function App() {
           </div>
         </div>
       </div>
-
+      </section>
       {/* ---------------About Start--------- */}
 
-      <section className="about">
-        <div className="main">
-          <img src={img} />
-          <div className="about-text">
-            <h2>About Me</h2>
-            <h5>Developer <span>& Designer</span></h5>
-            <p>I am a front-end web devloper. I can provide clean code and pixal
-               perfect design. As a web developer, I have many years of experience 
-               with CSS, JavaScript, and HTML. On top of that, my software development 
-               skills allowed me to build up my object-oriented programming abilities.</p>
-            <button type="button">Let's Talk</button>
+      <section id="about_us">
+        
+        <div className="about">
+          <div className="main">
+            <img src={img} />
+            <div className="about-text">
+              <h2>About Me</h2>
+              <h5>Developer <span>& Designer</span></h5>
+              <p>I am a front-end web devloper. I can provide clean code and pixal
+                perfect design. As a web developer, I have many years of experience 
+                with CSS, JavaScript, and HTML. On top of that, my software development 
+                skills allowed me to build up my object-oriented programming abilities.</p>
+              <button type="button">Let's Talk</button>
+            </div>
           </div>
         </div>
+        
       </section>
       {/* ----------Service section start---------- */}
+      <section id="service_me">
       <div className="service">
         <div className="title">
           <h2>Our Services</h2>
@@ -98,18 +104,19 @@ function App() {
           </div>
         </div>
       </div>
-
+      </section>
       {/* ----------contect Me---------- */}
-
+      <section id="contect_me">
       <div className="contect-me">
         <h2>Contect Me</h2>
         <p>Let Me Get You A Beautiful Website.</p>
         <a className="button-two" href="#">Hire Me</a>
       </div>
-
+      </section>
       {/* ----------footer start---------- */}
-
+      <section id="super">
       <footer>
+      
         <p>Subhankar Nayak</p>
         <p>My Social Account Is: </p>
         <div className="social">
@@ -119,6 +126,7 @@ function App() {
           <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
       </footer>
+      </section>
     </>
   );
   
